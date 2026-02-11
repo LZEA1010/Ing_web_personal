@@ -1,6 +1,5 @@
 # Ingeniería Web
-
-Este repositorio contiene un ejercico de la materia ingenieria web
+Este repositorio contiene todos mis trabajos personales de esta materia
 
 ## Tecnologías utilizadas
 - HTML
