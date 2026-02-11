@@ -21,6 +21,8 @@ header {
  margin: 0 auto;
  background-color: lightblue;
  height: 150px;
+ border: 2px solid black;
+ overflow: hidden; /* para contener los elementos flotantes */
 }
 
 .sidebar {
