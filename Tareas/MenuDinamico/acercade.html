@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Acerca de</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+<body>
+    <header class="header">
+        <h1>Acerca de</h1>
+    </header>
+
+    <nav class="navbar">
+        <button class="hamburger" id="menuBtn" aria-label="Abrir menú">&#9776;</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="acercade.html">Acerca de</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <h2>Sobre este sitio</h2>
+        <p>Este es un ejercicio de desarrollo web que muestra una galería de imágenes.</p>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Mi Sitio Web</p>
+    </footer>
+<!-- Bloque de javascript para detectar el desbordamiento del menú -->
+    <script>
+        const btn = document.getElementById('menuBtn');
+        const links = document.getElementById('navLinks');
+        btn.addEventListener('click', () => {
+            links.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>

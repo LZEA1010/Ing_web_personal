@@ -1,0 +1,137 @@
+/* VARIABLES CSS */
+:root {
+    --color-primario: #1278d8;
+    --color-borde: #1a252f;
+    --color-fondo: #f0f0f0;
+    --color-texto: black;
+    --color-texto-claro: #f0f0f0;
+    --color-borde-item: gray;
+}
+
+/* HEADER */
+.header {
+    background-color: var(--color-primario);
+    color: var(--color-texto-claro);
+    padding: 20px;
+    border: 3px solid var(--color-borde);
+    text-align: center;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: var(--color-primario);
+    border-bottom: 3px solid var(--color-borde);
+    padding: 0 20px;
+    /* Flex: alinea el botón hamburguesa y los links en una fila */
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+}
+
+.nav-links li a {
+    display: block;
+    padding: 12px 180px;
+    color: var(--color-texto-claro);
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.nav-links li a:hover {
+    background-color: var(--color-borde);
+}
+
+/* El botón hamburguesa está oculto por defecto */
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    color: var(--color-texto-claro);
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+/* ---- Menú hamburguesa: solo aparece si hay desbordamiento ---- */
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    /* Los links se ocultan verticalmente hasta que se activa .open */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+}
+
+/* GALERÍA — con Flexbox*/
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 10px auto;
+    background-color: var(--color-fondo);
+}
+
+.item {
+    /* Cada item ocupa ~1/3 del ancho disponible */
+    flex: 0 0 calc(33.333% - 20px);
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.item img {
+    width: 100%;
+    display: block;
+}
+
+.item img:hover {
+    transform: scale(1.025);
+}
+
+.item-footer {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    padding: 6px;
+    font-size: 0.85rem;
+    text-align: left;
+    border-top: 1px solid var(--color-borde-item);
+}
+
+.item-desc {
+    font-size: 0.75rem;
+    color: var(--color-texto);
+    border-top: none;
+}
+
+/* MAIN CONTENT (acercade.html)*/
+.main-content {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 10px;
+    background-color: var(--color-primario);
+    color: var(--color-texto-claro);
+    padding: 15px;
+    border: 3px solid var(--color-borde);
+    text-align: center;
+}

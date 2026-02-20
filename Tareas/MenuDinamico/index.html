@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Galeria</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+<body>
+    <header class="header">
+        <h1>Galeria 6 de imágenes</h1>
+    </header>
+
+    <nav class="navbar">
+        <button class="hamburger" id="menuBtn" aria-label="Abrir menú">&#9776;</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="acercade.html">Acerca de</a></li>
+        </ul>
+    </nav>
+
+    <ul class="galeria">
+        <li class="item">
+            <img src="https://wallpaper.forfun.com/fetch/34/34f7a80b4ad801f9be1ce51299c46fed.jpeg" alt="">
+            <div class="item-footer">Imagen 1</div>
+            <div class="item-footer item-desc">Fondo de pantalla</div>
+        </li>
+        <li class="item">
+            <img src="https://i.pinimg.com/736x/da/24/9d/da249d13d937caf71fcb772b353e4654.jpg" alt="">
+            <div class="item-footer">Imagen 2</div>
+            <div class="item-footer item-desc">Fondo de pantalla</div>
+        </li>
+        <li class="item">
+            <img src="https://i.pinimg.com/originals/79/cb/6c/79cb6c12bbd77a11883969d99404e6e8.jpg" alt="">
+            <div class="item-footer">Imagen 3</div>
+            <div class="item-footer item-desc">Fondo de pantalla</div>
+        </li>
+        <li class="item">
+            <img src="https://i.pinimg.com/originals/52/2e/ce/522ecec428de81bf8aedef0d5a5e9944.jpg" alt="">
+            <div class="item-footer">Imagen 4</div>
+            <div class="item-footer item-desc">Fondo de pantalla</div>
+        </li>
+        <li class="item">
+            <img src="https://i.pinimg.com/736x/cb/1e/19/cb1e19af0da517e43b8363ea498b7571.jpg" alt="">
+            <div class="item-footer">Imagen 5</div>
+            <div class="item-footer item-desc">Fondo de pantalla</div>
+        </li>
+        <li class="item">
+            <img src="https://w0.peakpx.com/wallpaper/358/901/HD-wallpaper-pc-landscape-resolution.jpg" alt="">
+            <div class="item-footer">Imagen 6</div>
+            <div class="item-footer item-desc">Fondo de pantalla</div>
+        </li>
+    </ul>
+
+    <footer class="footer">
+        <p>&copy; 2026 Mi Sitio Web</p>
+    </footer>
+<!-- Bloque de javascript para detectar el desbordamiento del menú -->
+    <script>
+        const btn = document.getElementById('menuBtn');
+        const links = document.getElementById('navLinks');
+        btn.addEventListener('click', () => {
+            links.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>

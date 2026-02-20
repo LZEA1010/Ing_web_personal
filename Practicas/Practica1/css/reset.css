@@ -1,0 +1,19 @@
+/* reset.css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Evita que el padding "infle" la caja */
+}
+
+ul {
+    list-style: none; /* quita los puntos de la navegación */
+}
+
+a {
+    text-decoration: none; /* quita el subrayado de los links */
+}
+
+img {
+    max-width: 100%; /* evita que las imags salgan de su caja */
+    display: block;
+}
